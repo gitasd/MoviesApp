@@ -1,7 +1,6 @@
 package com.redfeet.movieapp;
 
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -32,7 +31,9 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
 
     @Override
     public void onBindViewHolder(@NonNull MovieViewHolder holder, int position) {
-        holder.binding.setVariable(123, movies.get(position));
+        //holder.binding.setVariable(123, movies.get(position));
+        holder.binding.setMovie(movies.get(position));
+
     }
 
     @Override
